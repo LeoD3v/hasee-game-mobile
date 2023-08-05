@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(180, 186, 201);
+  font-family: "Monserrat";
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* overflow: hidden; */
+}
+#intro-screen {
+  position: relative;
+
+  width: 80%;
+
+  max-width: 395px;
+}
+.intro-container {
+  position: relative;
+}
+.intro-image {
+  width: 400px;
+  height: 620px;
+  border: 2px solid black;
+}
+.neo-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.start-game-btn {
+  font-size: 20px;
+  font-family: "Montserrat";
+  background-image: linear-gradient(
+    45deg,
+    rgba(251, 206, 6, 0.995),
+    rgba(98, 0, 255, 0.815)
+  );
+  position: absolute;
+  bottom: 17px;
+  left: 1px;
+  padding: 6px 32px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid rgb(244, 245, 244);
+  transition: all 0.8s;
+}
+.high-score {
+  font-size: 20px;
+  font-family: "Montserrat";
+  background-image: linear-gradient(
+    45deg,
+    rgba(98, 0, 255, 0.815),
+    rgba(251, 206, 6, 0.995)
+  );
+  background-color: rgb(180, 58, 180);
+  position: absolute;
+  bottom: 17px;
+  right: -8px;
+  padding: 6px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid rgb(248, 251, 248);
+  transition: all 0.8s;
+}
+
+.high-score:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgba(251, 206, 6, 0.995),
+    rgba(98, 0, 255, 0.815)
+  );
+  color: rgb(255, 255, 255);
+  /* font-size: 24px; */
+}
+.start-game-btn:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgba(98, 0, 255, 0.815),
+    rgba(251, 206, 6, 0.995)
+  );
+  color: rgb(255, 255, 255);
+  /* font-size: 24px;  */
+}
+/* //////////IN GAME//////////////// */
+#inGame-container {
+  position: relative;
+  width: 80%;
+  display: none;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.inGame-img {
+  width: 100%;
+  height: 660px;
+  border: 2px solid black;
+}
+#player-hasee {
+  /* width: 80px;
+  height: 110px; */
+  /* position: absolute; */
+  /* bottom: 10px; */
+  left: 210px;
+  background-image: url("../editedDoughnutfruits/haseeAndBasket.png");
+  background-size: cover;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.275);
+}
+
+.neopoints {
+  width: 30px;
+  height: 30px;
+  background-image: url("../Neopets-Doughnutfruits/neopoints.webp");
+  background-size: contain;
+  position: absolute;
+  bottom: 630px;
+  left: 360px;
+}
+.points {
+  font-family: "Montserrat";
+  position: absolute;
+  left: 330px;
+  bottom: 632px;
+  font-size: 18px;
+  color: rgb(251, 234, 3);
+  background-color: rgba(0, 0, 0, 0.411);
+}
+.h-score {
+  font-family: "Montserrat";
+  position: absolute;
+  left: 5px;
+  bottom: 635px;
+  font-size: 18px;
+  color: rgba(248, 249, 249, 0.792);
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.246);
+}
+.point {
+  font-family: "Montserrat";
+  font-size: 10;
+  color: rgb(78, 215, 44);
+}
+
+/* /////////SCORE-SCREEN////////// */
+
+#score-screen {
+  margin-top: 155px;
+  background-image: url("../Neopets-Doughnutfruits/neopetsScore.png");
+  background-image: linear-gradient(
+      45deg,
+      rgba(98, 0, 255, 0.815),
+      rgba(251, 206, 6, 0.995)
+    ),
+    url("../Neopets-Doughnutfruits/neopetsScore.png");
+
+  background-size: contain;
+
+  width: 400px;
+  height: 616px;
+  border: 2px solid black;
+  display: none;
+  position: relative;
+}
+h1 {
+  font-size: 48px;
+  font-family: "Montserrat";
+  color: rgb(254, 252, 252);
+  text-align: center;
+  padding-top: 80px;
+}
+.table {
+  font-size: 42px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  color: rgb(5, 5, 5);
+  font-family: "Montserrat";
+}
+.tb-header {
+  padding-right: 50px;
+  text-align: center;
+}
+.tb-name {
+  color: gold;
+  font-family: "Montserrat";
+}
+.tb-points {
+  color: gold;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.back-btn {
+  font-size: 22px;
+  background-color: rgb(226, 161, 41);
+  background-image: linear-gradient(
+    45deg,
+    rgba(251, 206, 6, 0.995),
+    rgba(98, 0, 255, 0.815)
+  );
+  font-family: "Montserrat";
+  position: absolute;
+  bottom: 20px;
+
+  padding: 5px 30px;
+  left: 130px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.back-btn:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgba(98, 0, 255, 0.815),
+    rgba(251, 206, 6, 0.995)
+  );
+  background-color: gold;
+  color: rgb(255, 255, 255);
+  /* font-size: 24px;  */
+}
+.score-title {
+  position: absolute;
+  top: -152px;
+}
+
+/* /////////Sound/////// */
+#music {
+  display: none;
+}
+.sound-on,
+.sound-off {
+  position: absolute;
+  width: 30px;
+  bottom: 80px;
+  right: 10px;
+  cursor: pointer;
+}
+.sound-on {
+  display: none;
+}
+
+.falling-fruit {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 100px;
+
+  /* Add any other styling you need for the fruits */
+}
+.title {
+  width: 200px;
+  bottom: 510px;
+  position: absolute;
+  border: 8px solid rgb(142, 62, 62);
+  border-radius: 8px;
+  right: 100px;
+  box-shadow: 5px 4px 5px 8px rgba(5, 5, 5, 0.809);
+  background-color: rgb(174, 162, 184);
+  background-image: linear-gradient(
+    45deg,
+    rgb(252, 252, 252),
+    rgb(63, 157, 152)
+  );
+}
+#game-over {
+  display: none;
+  position: relative;
+  /* width: 57%; */
+
+  width: 80%;
+
+  max-width: 395px;
+}
+.cry {
+  width: 400px;
+  height: 600px;
+  border-bottom: 2px solid black;
+}
+.finished {
+  width: 400px;
+  position: relative;
+  text-align: center;
+  background-color: rgba(215, 29, 29, 0.969);
+  padding: 16px;
+  border-radius: 8px;
+  bottom: 575px;
+  font-family: "Montserrat";
+}
+.back-menu {
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  bottom: 45px;
+  border: 3px solid;
+  cursor: pointer;
+  background-image: linear-gradient(
+    45deg,
+    rgba(251, 206, 6, 0.995),
+    rgba(98, 0, 255, 0.815)
+  );
+  font-family: "Montserrat";
+  transition: all 0.5s;
+}
+.back-menu:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgba(98, 0, 255, 0.815),
+    rgba(251, 206, 6, 0.995)
+  );
+  background-color: gold;
+  color: rgb(255, 255, 255);
+  /* font-size: 24px;  */
+}
+
+.final-score {
+  letter-spacing: 8px;
+  font-size: 40px;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(187, 196, 188, 0.086);
+  padding: 20px;
+  border-radius: 8px;
+  bottom: 350px;
+  right: 80px;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+}
+.final-score-num {
+  font-size: 48px;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  /* background-color: rgb(29, 215, 54); */
+  padding: 20px;
+  border-radius: 8px;
+  bottom: 300px;
+  right: 140px;
+  color: rgb(71, 255, 4);
+  font-family: "Montserrat";
+  position: absolute;
+}
+
+.left-btn {
+  width: 45px;
+  position: absolute;
+  bottom: 5px;
+
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.227);
+  padding: 1px 12px;
+}
+.right-btn {
+  cursor: pointer;
+  position: absolute;
+  width: 45px;
+  left: 254px;
+  bottom: 5px;
+  padding: 1px 12px;
+  background-color: rgba(255, 255, 255, 0.227);
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Montserrat:wght@400;600;800&family=Raleway:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="style/mobile.css" />
+
+    <title>Doughnutfruit Catcher</title>
+  </head>
+  <body>
+    <div id="intro-screen">
+      <audio id="music">
+        <source src="audio/introAudio.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="bell">
+        <source src="audio/Swiss Bell Sound.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="dung">
+        <source src="audio/dungEffect.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="intro-container">
+        <img class="neo-title" src="Neopets-Doughnutfruits/bestTitle.png" />
+        <img
+          class="intro-image"
+          src="Neopets-Doughnutfruits/introUpdated.png"
+        />
+        <img class="title" src="editedDoughnutfruits/retitle.png" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="sound-on"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="sound-off"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.531V19.94a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.506-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.395C2.806 8.757 3.63 8.25 4.51 8.25H6.75z"
+          />
+        </svg>
+
+        <button class="start-game-btn">Start Game</button>
+        <button class="high-score">Current-Score</button>
+      </div>
+    </div>
+    <div>
+      <div id="inGame-container">
+        <img class="neo-title" src="Neopets-Doughnutfruits/bestTitle.png" />
+        <img class="inGame-img" src="Neopets-Doughnutfruits/inGameImage.png" />
+        <div id="player-hasee"></div>
+        <div id="fruits"></div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="left-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="right-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </div>
+        <div class="score-table">
+          <section class="neopoints"></section>
+          <section class="points">0</section>
+          <section class="h-score">
+            Highest score <span class="point">1</span>
+          </section>
+        </div>
+      </div>
+      <!-- <span>0</span> -->
+    </div>
+    <div>
+      <div id="score-screen">
+        <div>
+          <img
+            class="neo-title score-title"
+            src="Neopets-Doughnutfruits/bestTitle.png"
+          />
+          <h1>Recent Score</h1>
+          <table class="table">
+            <tr>
+              <!-- < class="tb-header">NAME -->
+
+              <td class="score-screen-score">SCORE</td>
+            </tr>
+            <tr>
+              <!-- <td class="tb-name">Leo</td> -->
+
+              <td class="tb-points">10</td>
+            </tr>
+          </table>
+          <button class="back-btn">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="game-over">
+      <img class="neo-title" src="Neopets-Doughnutfruits/bestTitle.png" />
+      <img class="cry" src="editedDoughnutfruits/gameoverscreen.png" />
+      <h1 class="finished">GAME OVER</h1>
+      <h2 class="final-score">SCORE</h2>
+      <span class="final-score-num">200</span>
+      <button class="back-menu">MAIN MENU</button>
+    </div>
+
+    <script src="js/game.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
